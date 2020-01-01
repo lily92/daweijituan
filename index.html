@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="css/phone.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>大卫集团</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="">
+  </header>
+  <!--end  header -->
+
+  <!--star banner -->
+  <div class="swiper-container banner positionr wow fadeIn">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <!-- PC端banner  -->
+        <img src="images/index-banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/p-banner.jpg" alt="" srcset="" class="visible-xs w100">
+      </div>
+      <div class="swiper-slide">
+        <!-- PC端banner  -->
+        <img src="images/index-banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/p-banner.jpg" alt="" srcset="" class="visible-xs w100">
+      </div>
+      <div class="swiper-slide">
+        <!-- PC端banner  -->
+        <img src="images/index-banner.jpg" alt="" srcset="" class="hidden-xs w100">
+        <!-- 移动端banner -->
+        <img src="images/p-banner.jpg" alt="" srcset="" class="visible-xs w100">
+      </div>
+    </div>
+
+    <div class="swiper-pagination-banner swiper-pagination visible-xs"></div>
+    <div class="swiper-button-next swiper-button-white  hidden-xs"></div>
+    <div class="swiper-button-prev swiper-button-white hidden-xs"></div>
+    <script>
+      $(function () {
+        var swiper = new Swiper('.banner', {
+          autoplay: true,
+          speed: 600,
+          parallax: true,
+          loop: true,
+          effect: 'fade',
+          pagination: {
+            el: '.swiper-pagination-banner',
+            // type: 'fraction',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        });
+      })
+    </script>
+  </div>
+  <!-- end banner -->
+
+  <!-- item1 -->
+  <div class="about padding50">
+    <div class="max1200">
+      <h2 class="h2 fon20"><b>关于我们</b></h2>
+      <p class="fonar fon20  text-uppcase">about us </p>
+
+      <div>
+        “大卫雕塑” 一个作为雕塑艺术最高境界的品牌, 承载着解放艺术思想, 发扬艺术光辉的伟大使命, 公司传承于2001年, 是一家专业研发, 设计,生产,销售,
+        安装为一体的艺术创意作品及艺术工程定制企业公司目前已进行集团规模化运作, 大卫集团公司成员涉及建筑工程, 幕墙工程, 装修工程, 钢结构工程, 市政园林绿化工程领域。
+      </div>
+      <p class="padding20"><a href="" class="btn about-more">了解更多</a></p>
+      <div>
+        <img src="images/-s-about.png" alt="" srcset="" class="w100">
+      </div>
+    </div>
+  </div>
+  <!-- end item1 -->
+
+  <!-- item2 -->
+  <div class="bgf7 padding50">
+    <div class="max1200 flex just-between">
+
+      <div class="item2-left">
+        <div class="flex just-between flex-al-center margin-b20">
+          <h2 class="h2 fon20">新闻中心 <span class="fonar">/ News</span></h2>
+          <div>
+            <a href="">公司新闻</a> |
+            <a href="">行业动态</a> |
+            <a href="">企业视频</a>
+          </div>
+        </div>
+        <div class="new-list">
+          <ul class="dalist" id="dalist">
+            <li class="flex just-between">
+              <div class="new-img positionr">
+                <img src="images/about-img-new-bg.jpg" alt="" srcset="" class="w100">
+                <div class="positionb">
+                  <img src="images/about-img-new.jpg" alt="" srcset="" class="w100">
+                </div>
+              </div>
+              <div class="new-con flex">
+                <p  class="w100"><a href="" class="new-tag">公司新闻</a></p>
+                <div class="fon16 new-desc w100">
+                  公司实施质量管理和质量保证体系
+                </div>
+                <p class="w100">2019.10.2</p>
+              </div>
+            </li>
+          </ul>
+          <script id="das_tpl" type="text/html">
+            {{#  layui.each(d.list, function(index, item){ }}
+            <li class="flex just-between">
+              <div class="new-img positionr">
+                <img src="images/about-img-new-bg.jpg" alt="" srcset="" class="w100">
+                <div class="positionb">
+                  <img src="{{item.img}}" alt="" srcset="" class="w100">
+                </div>
+              </div>
+              <div class="new-con flex">
+                <p><a href="" class="new-tag">{{item.tag}}</a></p>
+                <div class="fon16 new-desc line2">
+                  {{item.title}}
+                </div>
+                <p>{{item.date}}</p>
+              </div>
+            </li>
+              {{#  }); }}
+           </script>
+
+        </div>
+
+      </div>
+      <div class="item2-right">
+        <div class="flex just-between flex-al-center margin-b20">
+          <h2 class="h2 fon20">工程案例 <span class="fonar">/ Case</span></h2>
+          <div>
+            <a href="">建筑工程</a> |
+            <a href="">装饰工程</a>
+          </div>
+        </div>
+        <ul class="caselist row flex" id="caselist">
+
+        </ul>
+        <script id="cases_tpl" type="text/html">
+          {{#  layui.each(d.list, function(index, item){ }}
+          <li class="col-sm-6">
+            <div class="positionr">
+              <img src="images/case-img-bg.jpg" alt="" srcset="" class="w100">
+              <a class="positionb" href=''>
+                <img src="{{item.img}}" alt="" srcset="" class="w100">
+              </a>
+              <a class="case-title flex flex-al-end" href=''>
+                {{item.title}}
+              </a>
+            </div>
+          </li>
+            {{#  }); }}
+         </script>
+
+      </div>
+    </div>
+  </div>
+  <!--end  item2 -->
+
+  <script>
+    layui.use('laytpl', function () {
+      var laytpl = layui.laytpl;
+      var dalist = {
+        //品牌新闻数据
+        "list": [
+          {
+            "id": "02",
+            "tag": "公司新闻",
+            "date": "2019.8.2",
+            "title": "公司实施质量管理和质量保证体系",
+            "desc": "2019 China Joy于8月2~5日在上海举办，高通创投成员Ximmerse携旗下全新MR交互系统Rhino X，以及多款线下一体化娱乐方案亮相，吸引了行业伙伴和众多玩家的现场关注。",
+            "img": "images/about-img-new.jpg"
+          }, {
+            "id": "02",
+            "tag": "公司新闻",
+            "date": "2019.8.2",
+            "title": "公司实施质量管理和质量保证体系",
+            "desc": "2019 China Joy于8月2~5日在上海举办，高通创投成员Ximmerse携旗下全新MR交互系统Rhino X，以及多款线下一体化娱乐方案亮相，吸引了行业伙伴和众多玩家的现场关注。",
+            "img": "images/about-img-new.jpg"
+          }, {
+            "id": "02",
+            "tag": "公司新闻",
+            "date": "2019.8.2",
+            "title": "公司实施质量管理和质量保证体系",
+            "desc": "2019 China Joy于8月2~5日在上海举办，高通创投成员Ximmerse携旗下全新MR交互系统Rhino X，以及多款线下一体化娱乐方案亮相，吸引了行业伙伴和众多玩家的现场关注。",
+            "img": "images/about-img-new.jpg"
+          }
+        ]
+      }
+      var das_tpls = das_tpl.innerHTML;
+      var view = document.getElementById('dalist');
+      laytpl(das_tpls).render(dalist, function (html) {
+        view.innerHTML = html;
+      });
+
+
+      var caselist = {
+        "list": [
+          {
+            "id": "02",
+            "title": "佛山三水 保利中央公园",
+            "img": "images/case-img.jpg"
+          }, {
+            "id": "02",
+            "title": "佛山三水 保利中央公园",
+            "img": "images/case-img.jpg"
+          }, {
+            "id": "02",
+            "title": "佛山三水 保利中央公园",
+            "img": "images/case-img.jpg"
+          }, {
+            "id": "02",
+            "title": "佛山三水 保利中央公园",
+            "img": "images/case-img.jpg"
+          }
+        ]
+      }
+      var cases_tpls = cases_tpl.innerHTML;
+      var view_case = document.getElementById('caselist');
+      laytpl(cases_tpls).render(caselist, function (html) {
+        view_case.innerHTML = html;
+
+      })
+    })
+  </script>
+
+
+  <!--star  footer -->
+  <footer>
+  </footer>
+  <!-- end footer -->
+
+</body>
+
+</html>
