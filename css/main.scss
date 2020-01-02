@@ -333,7 +333,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 .padding50{padding: 50px 0;} 
 .padding20{ padding: 20px 0;}
 .padding25{ padding: 25px;}
-.about{ background: url(../images/-s-about-bg.jpg) no-repeat center top; background-size: cover;}
+.about{ background: url(../images/-s-about-bg.jpg) no-repeat center top; background-size: cover; min-height: 560px;}
 .btn{ border-radius: 20px; border: 1px solid #522c27; color: #522c27; text-align: center; padding: 5px 20px; color: #522c27;}
 .bgf7{ background: #f7f7f7;}
 .item2-left{ width:36.8%;}
@@ -351,11 +351,15 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 
 .caselist{
   li{ margin-bottom:23px;}
-  li:nth-child(3),li:nth-child(4){ margin-bottom: 0;}
+ 
   a:hover{ color: $colorf;}
+  a{ display: flex;}
+}
+.caselist.index{
+  li:nth-child(3),li:nth-child(4){ margin-bottom: 0;}
 }
 
-.case-title{ height: 100px;  background: url(../images/case-title-bg.png) no-repeat center; color: $colorf; padding:0 10px; position: absolute; bottom: 0; left: 0; right: 0;}
+.case-title{ height: 100px;  background: url(../images/case-title-bg.png) no-repeat center; color: $colorf; padding:0 10px; position: absolute; bottom: 0; left: 0; right: 0; background-size: cover;}
 
 .row{ margin-left: -10px; margin-right: -10px;}
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
@@ -379,7 +383,85 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 .lineh2{ line-height: 2;}
 .margin-b20{ margin-bottom: 20px;}
+.flex-nowar{ flex-wrap: nowrap;}
+.margin0-auto{ margin: 0 auto;}
+.licheng-list{
+  li{ position: relative;}
+  li .circle{ min-height: 100px; width: 10px; position: relative; }
+  li .circle span{width: 10px; height: 10px; border-radius: 50%; border: 1px solid $color4b; content: ''; top: 10px;  position: absolute; left: 0px; background: #f7f7f7; z-index: 3;}
+  li .circle::after{ position: absolute; height: 106%; width: 1px ; border-left: 1px dashed #999999; content: ''; top: -3%; left: 5px;}
+  li .date{ width: 80px; line-height: 1;}
+  li .desc{ width: calc(100% - 180px);}
+}
+.tag-span a{ margin-right: 20px;}
+.tag-span a:hover,.tag-span a.cur{ color: #e77817;}
+.list-item{ padding-right: 55px; border-bottom: 1px solid #999;}
+.tag-2{ padding-left: 115px; font-size: 14px;
+  a{ margin-right: 15px;}
+  a:hover{ color: #e77817;}
+}
+.page{
+  .page-prev-next{ width: 70px;}
+  a{
+    color: #000;
+      display: inline-block; min-width: 20px; height: 20px; line-height: 20px; transition: .3s linear all; padding: 0 5px; font-size: 14px; margin: 0 3px;}
+  a:hover,.a.cur{ background: $color4b; color: $colorf;}
+} 
 
+
+.chongzhi{ position: absolute; right: 0; top: 25px;}
+.color{  border: 1px solid #999; width: 15px; height: 15px; display: inline-block; }
+.list-border{
+  .box{ transition: .3s linear all;border: 2px solid  transparent;}
+  li:hover .box{ border: 2px solid $color4b;}
+}
+
+ /*工程名录*/
+ .w123{
+   width: 123px;
+ }
+.minglu-list{
+  width: calc(100% - 150px);
+  li p{ padding: 3px 0;}
+}
+.list-padding5{
+  li{ padding: 5px 0;}
+}
+.mingli-item{ padding-bottom: 20px; border-bottom: 1px solid #999; margin-bottom: 20px;}
+.btn-ask{ background: $color4b; color: $colorf;line-height: 60px;text-align: center; display: block; width: 100%; }
+.w530{ max-width: 530px; margin:0 auto;  padding-right: 15px;}
+
+
+.layui-form-label{  width: 95px;}
+.citys{ width: calc(100% - 110px); margin-left: 15px;}
+.w48{ width: 48%;}
+.layui-btn{  background: $color4b;}
+.layui-form-radio>i:hover, .layui-form-radioed>i{ color: $color4b;}
+.layui-input, .layui-textarea{ border-radius: 5px;}
+.zhuanshi-list {
+  .col-lg-3{ margin-bottom: 20px;} 
+}
+.newlist{
+  li{ margin-bottom: 50px;}
+  .box{ border: 2px solid transparent; transition: .3s linear all; overflow: hidden;}
+  .scale{transition: .3s linear all;}
+  li:hover{ cursor: pointer; color: $color4b;}
+  li:hover .box{ border: 2px solid $color4b;}
+  li:hover .scale{ transform: scale(1.05);}
+  .news-more:hover{ text-decoration: underline; }
+  .desc{ margin: 5px 0;}
+}
+.next-prev a:hover{ font-weight: bold; color: $color4b;}
+.max850{ max-width: 850px; margin: 0 auto; width: 95%;}
+
+.yingxiao-list{
+  margin-left: -30px;margin-right:-30px;
+  li{ margin-bottom: 60px; padding-left: 30px; padding-right: 30px;}
+  .box{ box-shadow: 0 0 5px  rgba($color: #000, $alpha: 0.15); background: $colorf; padding: 20px;border: 2px solid  transparent; }
+  .box p{ padding: 3px 0;}
+  li:hover .box { border: 2px solid $color4b;}
+
+}
 
 @media (max-width: 1200px) {
   .fon32{ font-size: 28px;}
@@ -395,6 +477,10 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 @media (min-width: 1200px) {
   .header .nav-right ul{ width: calc(100% - 165px );}
+  .padding-li25{
+    margin-left: -25px; margin-right: -25px;
+    li{padding-left: 25px; padding-right: 25px; margin-bottom: 50px;}
+  }
 }
 @media (min-width: 1360px) {
  

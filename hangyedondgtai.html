@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="css/phone.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>大卫集团-行业动态</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="">
+  </header>
+  <!--end  header -->
+
+  <!--star banner -->
+  <div class="ny-banner positionr">
+    <img src="images/banner2.jpg" alt="" srcset="" class="w100  hidden-xs">
+    <img src="images/p-banner.jpg" alt="" srcset="" class="w100  visible-xs">
+    <div class="positionb flex flex-center colorf fon32">
+      <div class="banner-txt">大卫出品·流芳百世</div>
+    </div>
+  </div>
+  <!-- end banner -->
+
+  <!-- location -->
+  <div class="location max1200 colorf text-right">
+    <p>
+      <a href="">首页</a>
+      < <a href="">新闻事件</a>
+        < <a href="">公司新闻</a>
+
+    </p>
+  </div>
+  <!--end  location -->
+
+  <!--star menu  -->
+  <div class="lmenu bgf7">
+    <div class="max1200 ">
+      <ul class="flex">
+        <li><a href="" class="cur">公司新闻</a></li>
+        <li><a href="">行业动态</a></li>
+        <li><a href="">企业视频</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--end menu  -->
+
+
+  <!-- 公司新闻 -->
+  <div class="about padding50">
+    <div class="max1200 ">
+
+      <ul class="newlist" id="lichenglist">
+
+      </ul>
+      <script id="cases_tpl" type="text/html">
+          {{#  layui.each(d.list, function(index, item){ }}
+          <li  class='row flex '>
+              <div class="news-img  col-sm-4">
+                <div class='positionr box'>
+                  <img src="images/new-img-bg.jpg" alt="" srcset="" class="w100 ">
+                  <div class="positionb">
+                     <img src="images/new-img.jpg" alt="" srcset="" class="w100 scale ">
+                   </div>
+                </div>
+              </div>
+              <div class="news-con col-sm-8 flex flex-al-center">
+                <p class="date fon16 color4b w100">{{item.title}}</p>
+                <p class="line2  desc w100">{{item.desc}}</p>
+                <p class='flex just-between w100'>
+                  <span>{{item.date}}</span>
+                  <a href=""   class='news-more  color4b'>查看更多</a>
+                </p>
+              </div>
+            </li>
+            {{#  }); }}
+         </script>
+      <div class="page text-center max1200 padding50  ">
+        <a href="">首页</a>
+        <a href="" class="page-prev-next">上一页</a>
+        <a href="" class="cur">1</a>
+        <a href="">2</a>
+        <a href="">3</a>
+        <a href="">4</a>
+        <a href="">5</a>
+
+        <a href="">……</a>
+        <a href="">8</a>
+        <a href="" class="page-prev-next">下一页</a>
+        <a href="">末页</a>
+      </div>
+
+      <script>
+        layui.use('laytpl', function () {
+          var laytpl = layui.laytpl;
+          var lichenglist = {
+            "list": [
+              {
+                "id": "02",
+                "date": "2019.8.2",
+                "title": "庆祝佛山市大卫雕塑有限公司官网正式开通",
+                "desc": "以玻璃纤维或其制品作增强材料的增强塑料，称为玻璃纤维增强塑料，俗称玻璃钢。是一种复合材料。由于所使用的树脂品种不同，由于所使用的树脂品种不同，由于所使用的树脂品种不同...",
+                "img": "images/new-img.jpg"
+              },
+              {
+                "id": "02",
+                "date": "2019.8.2",
+                "title": "庆祝佛山市大卫雕塑有限公司官网正式开通",
+                "desc": "以玻璃纤维或其制品作增强材料的增强塑料，称为玻璃纤维增强塑料，俗称玻璃钢。是一种复合材料。由于所使用的树脂品种不同，由于所使用的树脂品种不同，由于所使用的树脂品种不同...",
+                "img": "images/new-img.jpg"
+              },
+              {
+                "id": "02",
+                "date": "2019.8.2",
+                "title": "庆祝佛山市大卫雕塑有限公司官网正式开通",
+                "desc": "以玻璃纤维或其制品作增强材料的增强塑料，称为玻璃纤维增强塑料，俗称玻璃钢。是一种复合材料。由于所使用的树脂品种不同，由于所使用的树脂品种不同，由于所使用的树脂品种不同...",
+                "img": "images/new-img.jpg"
+              },
+              {
+                "id": "03",
+                "title": "一生一爱”明星婚嫁系列",
+                "desc": "以一为设计灵感，传递一爱一人生的幸福哲学，经由时间美丽隽永的信物，为你永久珍藏。",
+                "img": "images/new-img.jpg"
+              }
+            ]
+          }
+          var cases_tpls = cases_tpl.innerHTML;
+          var view_case = document.getElementById('lichenglist');
+          laytpl(cases_tpls).render(lichenglist, function (html) {
+            view_case.innerHTML = html;
+          });
+
+        })
+      </script>
+    </div>
+  </div>
+  <!--  end 公司新闻 -->
+
+
+
+
+
+  <!--star  footer -->
+  <footer>
+  </footer>
+  <!-- end footer -->
+
+</body>
+
+</html>
