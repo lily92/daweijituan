@@ -47,7 +47,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color:$color0
+  color:$color4b
 }
 input,
 textarea,
@@ -506,6 +506,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
     .txt{ opacity: 1;}
 }
 }
+.swiper-pagination-bullet-active{ background: $color4b}
 
 @media (max-width: 1200px) {
   .fon32{ font-size: 28px;}
@@ -514,6 +515,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 @media (max-width: 1024px) {
   .fon40{ font-size: 25px}
+  .logo img{ width: 190px}
 }
 @media (min-width: 768px) {
 }

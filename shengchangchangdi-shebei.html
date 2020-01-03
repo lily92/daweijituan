@@ -86,18 +86,28 @@
 
           </div>
           <!-- Add Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination visible-xs"></div>
         </div>
         <script>
           var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
-            spaceBetween:0,
+            spaceBetween: 0,
             centeredSlides: true,
             loop: true,
             pagination: {
               el: '.swiper-pagination',
               clickable: true,
             },
+            breakpoints: {
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+              }
+            }
           });
         </script>
 
