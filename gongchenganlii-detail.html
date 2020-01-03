@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="layui/css/layui.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width:767px)" href="css/phone.css" />
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="layui/layui.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <title>大卫集团-石材产品</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="">
+  </header>
+  <!--end  header -->
+
+  <!--star banner -->
+  <div class="ny-banner positionr">
+    <img src="images/banner3.jpg" alt="" srcset="" class="w100  hidden-xs">
+    <img src="images/p-banner.jpg" alt="" srcset="" class="w100  visible-xs">
+    <div class="positionb flex flex-center colorf fon32">
+      <div class="banner-txt">大卫雕塑·美好江山</div>
+    </div>
+  </div>
+  <!-- end banner -->
+
+  <!-- location -->
+  <div class="location max1200 colorf text-right">
+    <p>
+      <a href="">首页</a>
+      < <a href="">经典工程</a>
+        < <a href="">工程案例</a>
+
+    </p>
+  </div>
+  <!--end  location -->
+
+  <!--star menu  -->
+  <div class="lmenu bgf7">
+    <div class="max1200 ">
+      <ul class="flex">
+        <li><a href="gongchenganlii.html" class="cur">工程案例</a></li>
+        <li><a href="gongchengminglu.html">工程名录</a></li>
+
+
+      </ul>
+    </div>
+  </div>
+  <!--end menu  -->
+
+  <!-- 工程名录详情 -->
+  <div class="about padding50">
+    <div class="max1200  ">
+      <!-- Swiper -->
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" id="bannerlist">
+            <img src="images/ml-d.jpg" alt="" srcset="" class="w100">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ml-d.jpg" alt="" srcset="" class="w100">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ml-d.jpg" alt="" srcset="" class="w100">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/ml-d.jpg" alt="" srcset="" class="w100">
+          </div>
+        </div>
+       
+        <script id="banners_tpl" type="text/html">
+            {{#  layui.each(d.list, function(index, item){ }}
+            <div class="swiper-slide">
+              <img src="images/ml-d.jpg" alt="" srcset="" class="w100">
+            </div>
+              {{#  }); }}
+        </script>
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div> -->
+        <!-- <div class="swiper-button-prev swiper-button-white"></div> -->
+      </div>
+      <div class="padding-lr30 positionr">
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide positionr " >
+              <!-- 占位符，勿读后台 -->
+              <img src="images/ml-bg.jpg" alt="" srcset="" class="w100" >
+              <!--end  占位符，勿读后台 -->
+              <div class="positionb" >
+                <img src="images/ml-d1.jpg" alt="" srcset="" class="w100" >
+              </div>
+            </div>
+            <div class="swiper-slide positionr " >
+              <!-- 占位符，勿读后台 -->
+              <img src="images/ml-bg.jpg" alt="" srcset="" class="w100" >
+              <!--end  占位符，勿读后台 -->
+              <div class="positionb" >
+                <img src="images/ml-d2.jpg" alt="" srcset="" class="w100" >
+              </div>
+            </div>
+            <div class="swiper-slide positionr " >
+              <!-- 占位符，勿读后台 -->
+              <img src="images/ml-bg.jpg" alt="" srcset="" class="w100" >
+              <!--end  占位符，勿读后台 -->
+              <div class="positionb" >
+                <img src="images/ml-d3.jpg" alt="" srcset="" class="w100" >
+              </div>
+            </div>
+            <div class="swiper-slide positionr " >
+              <!-- 占位符，勿读后台 -->
+              <img src="images/ml-bg.jpg" alt="" srcset="" class="w100" >
+              <!--end  占位符，勿读后台 -->
+              <div class="positionb" >
+                <img src="images/ml-d1.jpg" alt="" srcset="" class="w100" >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next-r"></div>
+        <div class="swiper-button-next-l"></div>
+      </div>
+      
+      <!-- end swiper -->
+      <br>
+      <div class="text-center">
+        <p class="fon24 color4b"> <b>南海别墅</b></p>
+        <p class="text-uppercase">South Sea Villa</p>
+        <br>
+        <div>
+          这座伟大建筑的筑就，是对信仰的一种纪念，一种崇拜，一种感恩，一种赞美，一种传扬，更是一种信仰的延续。一根柱子一面墙壁一弯转角每一点细节散发的每一丝气息都是品位…
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  end 工程名录详情 -->
+
+  <script>
+
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 30,
+      slidesPerView: 3,
+      freeMode: true,
+      loop: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.swiper-button-next-r',
+        prevEl: '.swiper-button-prev-l',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween:15,
+        }
+      }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      },
+    
+    });
+  </script>
+
+
+
+
+
+
+
+  <!--star  footer -->
+  <footer>
+  </footer>
+  <!-- end footer -->
+
+</body>
+
+</html>

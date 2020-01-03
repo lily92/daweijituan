@@ -58,7 +58,7 @@
           speed: 600,
           parallax: true,
           loop: true,
-          effect: 'fade',
+          // effect: 'fade',
           pagination: {
             el: '.swiper-pagination-banner',
             // type: 'fraction',
@@ -84,7 +84,7 @@
         “大卫雕塑” 一个作为雕塑艺术最高境界的品牌, 承载着解放艺术思想, 发扬艺术光辉的伟大使命, 公司传承于2001年, 是一家专业研发, 设计,生产,销售,
         安装为一体的艺术创意作品及艺术工程定制企业公司目前已进行集团规模化运作, 大卫集团公司成员涉及建筑工程, 幕墙工程, 装修工程, 钢结构工程, 市政园林绿化工程领域。
       </div>
-      <p class="padding20"><a href="" class="btn about-more">了解更多</a></p>
+      <p class="padding20"><a href="guanyuwomen.html" class="btn about-more">了解更多</a></p>
       <div>
         <img src="images/-s-about.png" alt="" srcset="" class="w100">
       </div>
@@ -100,9 +100,9 @@
         <div class="flex just-between flex-al-center margin-b20">
           <h2 class="h2 fon20">新闻中心 <span class="fonar">/ News</span></h2>
           <div>
-            <a href="">公司新闻</a> |
-            <a href="">行业动态</a> |
-            <a href="">企业视频</a>
+            <a href="new.html">公司新闻</a> |
+            <a href="hangyedondgtai.html">行业动态</a> |
+            <a href="newd-qiyeshipin.html">企业视频</a>
           </div>
         </div>
         <div class="new-list">
@@ -129,15 +129,15 @@
               <div class="new-img positionr">
                 <img src="images/about-img-new-bg.jpg" alt="" srcset="" class="w100">
                 <div class="positionb">
-                  <img src="{{item.img}}" alt="" srcset="" class="w100">
+                  <a href="newd.html"><img src="{{item.img}}" alt="" srcset="" class="w100"></a>
                 </div>
               </div>
               <div class="new-con flex">
                 <p><a href="" class="new-tag">{{item.tag}}</a></p>
-                <div class="fon16 new-desc line2">
+                <a href='newd.html' class="fon16 new-desc line2">
                   {{item.title}}
-                </div>
-                <p>{{item.date}}</p>
+                </a>
+                <a  href='newd.html'>{{item.date}}</a>
               </div>
             </li>
               {{#  }); }}
@@ -150,7 +150,7 @@
         <div class="flex just-between flex-al-center margin-b20">
           <h2 class="h2 fon20">工程案例 <span class="fonar">/ Case</span></h2>
           <div>
-            <a href="">建筑工程</a> |
+            <a href="gongchenganlii.html">建筑工程</a> |
             <a href="">装饰工程</a>
           </div>
         </div>
@@ -162,10 +162,10 @@
           <li class="col-sm-6">
             <div class="positionr">
               <img src="images/case-img-bg.jpg" alt="" srcset="" class="w100">
-              <a class="positionb" href=''>
+              <a class="positionb" href='gongchenganlii-detail.html'>
                 <img src="{{item.img}}" alt="" srcset="" class="w100">
               </a>
-              <a class="case-title flex flex-al-end" href=''>
+              <a class="case-title flex flex-al-end" href='gongchenganlii-detail.html'>
                 {{item.title}}
               </a>
             </div>

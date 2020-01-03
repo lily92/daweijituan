@@ -33,7 +33,7 @@ $colorfa: #fafafa;
     font-size: 14px;
   }
   .ny-banner{ margin-top: 63px;}
-  .header{ background: #ccc; width: 100%; min-height: 63px; padding: 0 20px;}
+  .header{ background: #333; width: 100%; min-height: 63px; padding: 0 20px;}
 
   .p-text-center{ text-align: center;}
 
@@ -41,11 +41,11 @@ $colorfa: #fafafa;
   .logo{ position: relative; z-index: 3;}
   
    .navbar-collapse {
-    background: -webkit-linear-gradient(45deg,#333,60%,#ccc);
-    background: -o-linear-gradient(45deg,#333,60%,#ccc);
-    background: linear-gradient(45deg,#333,60%,#ccc);
+    background: -webkit-linear-gradient(45deg,#333,60%,#4b2622);
+    background: -o-linear-gradient(45deg,#333,60%,#4b2622);
+    background: linear-gradient(45deg,#333,60%,#4b2622);
     position: fixed;
-    right:-100%; top: 0;
+    right:0; top: -100%;
     width: 100%; height: 100%;
     z-index: 2;
     opacity: 0; transition: .3s linear all;
@@ -54,7 +54,7 @@ $colorfa: #fafafa;
   .mobile-nav{ font-size: 16px; border-top: 1px solid #e2e2e2;margin-top:80px;
     li{ padding: 10px 0 10px 0; border-bottom: 1px solid #e2e2e2; position: relative;}
     a{ color: $colorf;}
-    .p-nav-icon{ position: absolute; width: 40px; height: 100%; border-left:1px solid #e2e2e2 ; text-align: center; font-size: 18px; right: 0; top: 0; line-height: 33px;}
+    .p-nav-icon{ position: absolute; width: 40px; height: 100%; border-left:1px solid #e2e2e2 ; text-align: center; font-size: 18px; right: 0; top: 0; line-height: 33px; padding-top: 5px;}
     a.p-frist{ display: block; padding:0 20px;}
   }
   .psub-menu{
@@ -195,6 +195,16 @@ $colorfa: #fafafa;
     margin-left: 0;margin-right:0;
     li{ margin-bottom:20px; padding-left: 10px; padding-right: 10px;}
   }
+  .w58{ width: 100%; margin-bottom: 10px;}
+  .w22{ width: 32%;}
+  .box-shadow{ background: $colorf; padding:20px 10px;}
+  .ditu-list dl{ margin-bottom: 15px;}
+  .w34 { width: 100%;}
+  .w66{ width: 100%;}
+  .layui-btn-w100{ width: 100%;}
+  .list-margin-l30{ margin-left: 0; margin-right: 0;}
+  .list-margin-l30 li{ margin-bottom: 15px; padding-left: 15px; padding-right: 15px;}
+  .swiper-button-next-r, .swiper-button-next-l{ width: 38px; height: 38px;}
 }
 
 

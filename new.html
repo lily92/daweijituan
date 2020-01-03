@@ -41,7 +41,6 @@
       <a href="">首页</a>
       < <a href="">新闻事件</a>
         < <a href="">公司新闻</a>
-
     </p>
   </div>
   <!--end  location -->
@@ -50,9 +49,9 @@
   <div class="lmenu bgf7">
     <div class="max1200 ">
       <ul class="flex">
-        <li><a href="" class="cur">公司新闻</a></li>
-        <li><a href="">行业动态</a></li>
-        <li><a href="">企业视频</a></li>
+        <li><a href="new.html" class="cur">公司新闻</a></li>
+        <li><a href="hangyedondgtai.html">行业动态</a></li>
+        <li><a href="newd-qiyeshipin.html">企业视频</a></li>
       </ul>
     </div>
   </div>
@@ -63,10 +62,10 @@
   <div class="about padding50">
     <div class="max1200 ">
 
-      <ul class="newlist" id="lichenglist">
+      <ul class="newlist" id="bannerlist">
 
       </ul>
-      <script id="cases_tpl" type="text/html">
+      <script id="banners_tpl" type="text/html">
           {{#  layui.each(d.list, function(index, item){ }}
           <li  class='row flex '>
               <div class="news-img  col-sm-4">
@@ -87,7 +86,7 @@
               </div>
             </li>
             {{#  }); }}
-         </script>
+      </script>
       <div class="page text-center max1200 padding50  ">
         <a href="">首页</a>
         <a href="" class="page-prev-next">上一页</a>
@@ -106,7 +105,7 @@
       <script>
         layui.use('laytpl', function () {
           var laytpl = layui.laytpl;
-          var lichenglist = {
+          var bannerlist = {
             "list": [
               {
                 "id": "02",
@@ -131,15 +130,16 @@
               },
               {
                 "id": "03",
+                "date": "2019.8.2",
                 "title": "一生一爱”明星婚嫁系列",
                 "desc": "以一为设计灵感，传递一爱一人生的幸福哲学，经由时间美丽隽永的信物，为你永久珍藏。",
                 "img": "images/new-img.jpg"
               }
             ]
           }
-          var cases_tpls = cases_tpl.innerHTML;
-          var view_case = document.getElementById('lichenglist');
-          laytpl(cases_tpls).render(lichenglist, function (html) {
+          var banners_tpls = banners_tpl.innerHTML;
+          var view_case = document.getElementById('bannerlist');
+          laytpl(banners_tpls).render(bannerlist, function (html) {
             view_case.innerHTML = html;
           });
 
