@@ -76,7 +76,17 @@
               <button class="layui-btn layui-btn-w100" lay-submit lay-filter="formDemo">提交</button>
             </div>
         </div>
-
+        <script>
+            //Demo
+            layui.use('form', function () {
+              var form = layui.form;
+              //监听提交
+              form.on('submit(formDemo)', function (data) {
+                layer.msg(JSON.stringify(data.field));
+                return false;
+              });
+            });
+          </script>
 
         </form>
 
