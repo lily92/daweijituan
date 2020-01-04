@@ -370,9 +370,10 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
  a{ color: $colorf;}
  a:hover{ text-decoration: underline;}
 }
+.about-con{ padding-bottom: 20px}
 .lmenu{
   ul.flex{ flex-wrap: nowrap;}
-  li a{ padding: 40px 30px; display: block; transition: .3s linear all;}
+  li a{ padding: 40px 30px; display: block; transition: .3s linear all; white-space: nowrap}
   a:hover,a.cur{ background: #4b2622; color: $colorf;}
 }
 
@@ -494,8 +495,8 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 .gallery-thumbs .swiper-slide{ background: #ccc;}
 .padding-lr30{padding-left: 30px; padding-right: 30px;}
 .swiper-button-next-r,.swiper-button-next-l{ width: 48px; height: 48px; position: absolute; top: 50%; transform: translateY(-50%); z-index: 3; }
-.swiper-button-next-r{ right: -10px; background: url(../images/jt-r.png)  no-repeat center;background-size: contain;}
-.swiper-button-next-l{left: -10px;background: url(../images/jt-l.png)  no-repeat center;background-size: contain;}
+.swiper-button-next-r{ right: 0px; background: url(../images/jt-r.png)  no-repeat center;background-size: contain;}
+.swiper-button-next-l{left: 0px;background: url(../images/jt-l.png)  no-repeat center;background-size: contain;}
 .shebei{
   padding: 60px 0;
   .swiper-slide{ transition: 300ms;transform: scale(0.8);}
@@ -508,10 +509,12 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 .swiper-pagination-bullet-active{ background: $color4b}
 
+
 @media (max-width: 1200px) {
   .fon32{ font-size: 28px;}
   .fon18{  font-size: 16px;}
   .fon30{ font-size: 24px;}
+  .new-list .new-desc{ font-size:12px;}
 }
 @media (max-width: 1024px) {
   .fon40{ font-size: 25px}

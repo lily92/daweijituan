@@ -33,7 +33,7 @@ $colorfa: #fafafa;
     font-size: 14px;
   }
   .ny-banner{ margin-top: 63px;}
-  .header{ background: #333; width: 100%; min-height: 63px; padding: 0 20px;}
+  .header{ background: #fff; width: 100%; min-height: 63px; padding: 0 20px;}
 
   .p-text-center{ text-align: center;}
 
@@ -41,9 +41,9 @@ $colorfa: #fafafa;
   .logo{ position: relative; z-index: 3;}
   
    .navbar-collapse {
-    background: -webkit-linear-gradient(45deg,#333,60%,#4b2622);
-    background: -o-linear-gradient(45deg,#333,60%,#4b2622);
-    background: linear-gradient(45deg,#333,60%,#4b2622);
+    background: -webkit-linear-gradient(45deg,#fff,60%,#fff);
+    background: -o-linear-gradient(45deg,#fff,60%,#fff);
+    background: linear-gradient(45deg,#fff,60%,#fff);
     position: fixed;
     right:0; top: -100%;
     width: 100%; height: 100%;
@@ -53,8 +53,8 @@ $colorfa: #fafafa;
   .navbar-collapse.active{ opacity: 1; top: 0; right: 0;}
   .mobile-nav{ font-size: 16px; border-top: 1px solid #e2e2e2;margin-top:80px;
     li{ padding: 10px 0 10px 0; border-bottom: 1px solid #e2e2e2; position: relative;}
-    a{ color: $colorf;}
-    .p-nav-icon{ position: absolute; width: 40px; height: 100%; border-left:1px solid #e2e2e2 ; text-align: center; font-size: 18px; right: 0; top: 0; line-height: 33px; padding-top: 5px;}
+    a{ color: $color3;}
+    .p-nav-icon{ position: absolute; width: 40px; height: 100%; border-left:1px solid #e2e2e2 ; text-align: center; font-size: 18px; right: 0; top: 0; line-height: 33px; padding-top: 5px; color: $color3}
     a.p-frist{ display: block; padding:0 20px;}
   }
   .psub-menu{
@@ -65,7 +65,7 @@ $colorfa: #fafafa;
   .hamburger .line {
     width: 35px;
     height: 3px;
-    background-color: $colorf;
+    background-color: $color3;
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -104,11 +104,11 @@ $colorfa: #fafafa;
     transition: all 0.3s ease-in-out;
   }
   #nav-btn.is-active:before {
-    border: 2px solid $colorf;
+    // border: 2px solid $colorf;
   }
   #nav-btn.is-active .line {
     width: 17px;
-    background: $colorf;
+    background: $color3;
   }
   #nav-btn.is-active .line:nth-child(2) {
     opacity: 0;
