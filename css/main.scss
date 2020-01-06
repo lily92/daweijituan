@@ -307,7 +307,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 .padding30{ padding: 30px;}
 .just-between{ justify-content: space-between;}
 
-.form{ width:132px; border-bottom: 1px solid #e2e2e2; padding-top: 26px; margin-bottom: 10px;
+.form{ width:132px; border-bottom: 1px solid #e2e2e2; padding-top: 15px; margin-bottom: 10px;
   .search-btn{ width: 97px; height: 28px; padding: 4px 0; border-radius: 0; border: 0; color: $color3;}
   .icon-search{ width: 19px; height: 19px; background: url(../images/sousuo.png)  no-repeat center; border: 0;}
 }
@@ -350,7 +350,9 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 
 .caselist{
   li{ margin-bottom:23px;}
- 
+  li .positionb { overflow: hidden;}
+  li .positionb img{ transition: .3s linear all}
+  // li:hover .positionb img{ transform: scale(1.1)}
   a:hover{ color: $colorf;}
   a{ display: flex;}
 }
@@ -358,7 +360,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
   li:nth-child(3),li:nth-child(4){ margin-bottom: 0;}
 }
 
-.case-title{ height: 100px;  background: url(../images/case-title-bg.png) no-repeat center; color: $colorf; padding:0 10px; position: absolute; bottom: 0; left: 0; right: 0; background-size: cover;}
+.case-title{ height: 100px;  background: url(../images/case-title-bg.png) no-repeat center; color: $colorf; padding:0 10px; position: absolute; bottom: 0; left: 2px; right: 0; background-size: cover; width: calc(100% - 4px);}
 
 .row{ margin-left: -10px; margin-right: -10px;}
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
@@ -379,7 +381,7 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 
 .w50{ width: 50%;}
 .w70{ width: 70%; margin: 0 auto;}
-.culure-con{ padding: 20px ; width: 100%;}
+.culure-con{ padding: 13% ; width: 100%;}
 .linian{
   ul li{ padding: 5px 0;}
 }
@@ -447,14 +449,14 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 .newlist{
   li{ margin-bottom: 50px;}
-  .box{ border: 2px solid transparent; transition: .3s linear all; overflow: hidden;}
+  .box{ transition: .3s linear all; overflow: hidden ; }
   .scale{transition: .3s linear all;}
   li:hover{ cursor: pointer; color: $color4b;}
-  li:hover .box{ border: 2px solid $color4b;}
-  li:hover .scale{ transform: scale(1.05);}
-
+  li .positionb img{border: 2px solid transparent;}
+  li:hover .positionb img{border: 2px solid $color4b; }
   .news-more:hover{ text-decoration: underline; }
   .desc{ margin: 5px 0;}
+  li:hover .desc{ color: $color4b}
 }
 .next-prev a:hover{ font-weight: bold; color: $color4b;}
 .max850{ max-width: 850px; margin: 0 auto; width: 95%;}
@@ -508,7 +510,22 @@ header.active{ background:rgba($color: #fff, $alpha: 0.98); position: fixed;
 }
 }
 .swiper-pagination-bullet-active{ background: $color4b}
-
+.caselist li{
+  .positionb{ padding: 2px; }
+  .positionb img{ border: 2px solid transparent; transition: .2s linear all}
+}
+.caselist li:hover{ 
+  .positionb img{ border: 2px solid $color4b}
+}
+.w200{ width: 150px}
+.new-list{
+  a{ display: block}
+   li:hover { color: $color4b; cursor: pointer;}
+   li:hover a{ color: $color4b}
+   li .positionb{  overflow: hidden;}
+   li .positionb img{ transition: .3s linear all}
+   li:hover .positionb img{ transform: scale(1.1)}
+}
 
 @media (max-width: 1200px) {
   .fon32{ font-size: 28px;}
